@@ -1,0 +1,14 @@
+event{}
+
+http{
+        include mime.types;
+ 
+        server{
+                listen 80;
+                root /var/www/nginx/html/index.html;
+        }
+        server{
+                listen 8080;
+                root /var/www/nginx/html/seondwebsite/index.html
+        }
+}
